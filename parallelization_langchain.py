@@ -30,7 +30,7 @@ from langchain_core.output_parsers import StrOutputParser
 from langchain_core.runnables import Runnable, RunnableParallel, RunnablePassthrough
 
 # --- 初始化 DeepSeek 模型 ---
-llm = ChatDeepSeek(model="deepseek-chat", temperature=0.7)
+llm = ChatDeepSeek(model="deepseek-reasoner", temperature=0.7)
 
 # --- 定义三条可并行执行的独立链 ---
 # 分别完成：简要摘要、生成问题、提取关键词

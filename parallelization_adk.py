@@ -178,6 +178,9 @@ def run_parallel_pipeline(stream: bool = False) -> str:
         "【电动汽车】\n" + r2 + "\n\n"
         "【碳捕获】\n" + r3
     )
+    print(merger_input)
+    print("\n已收集并行研究结果，准备进入合并阶段 …")
+
 
     # 阶段 2：合并报告（新会话，只跑合并智能体）
     session_id_2 = str(uuid.uuid4())
